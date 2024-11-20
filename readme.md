@@ -12,15 +12,16 @@ To address the label-imbalance problem, oversampling function is implemented. To
 **Refer to sample ipynb files to view how to apply emc sampling functions in emc.py.**
 
 ### EMC and random sampling comparison metric plots for two different tasks:
-1. Stroke prediction using health record data (left)
+1. Stroke prediction using health record data (left) \
 Source: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
-2. Anti-bacterial small molecule screening with molecular fingerprint data (right)
+2. Anti-bacterial small molecule screening with molecular fingerprint data (right) \
 Source: https://github.com/cardonalab/Prediction-of-ATB-Activity
 
 <div style="text-align: center;">
 <img src="./res_img/stroke_classification_results.png" alt="stroke_prediction_results" width="300"/> <img src="./res_img/small_molecule_classification_results.png" alt="anti_bacterial_effect_prediction_results" width="300"/>
 </div>
 
+##### Dependencies
 ```
 python 3.11.8
 matplotlib 3.8.4
@@ -29,6 +30,5 @@ pandas 2.2.2
 scikit-learn 1.2.2
 scipy 1.12.0
 seaborn 0.13.2
-
-*Dependencies only for emc.py listed 
+imblearn 0.10.1
 ```
