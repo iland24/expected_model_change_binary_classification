@@ -11,7 +11,7 @@ EMC is prone to outliers in the dataset because outliers tend to bring a large c
 
 In this repo, EMC is implemented using sklearn's Logistic Regression (LR), and the model only takes binary labeled data as input. Once data is split into test and train sets, train datset is split into two; one split is for initially training the model and the other for creating a data pool from which a sample will be selected through EMC method. A baseline model that selects samples randomly from the data pool is implemented for performance comparison. As for model performance metric, accuracy, precision and recall can be logged in user-designated directory and log interval. 
 
-Example config:
+##### Example config:
 ```
 config={
     "emc_dir_path":None,
@@ -53,8 +53,7 @@ imblearn 0.12.0
 # Additional dependencies for running drug_data notebook
 rdkit-pypi 2022.9.5 
 ```
-<br/><br/>
-##### Comparison of EMC (red) & random sampling metric plots for 2 tasks:
+#### Comparison of EMC & random sampling metric plots for 2 tasks:
 1. Stroke prediction using health record data\
 Source: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 2. Anti-bacterial small molecule screening with molecular fingerprint data\
